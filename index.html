@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basit Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+      
+        <div class="chat-header">
+            <div class="user-info">
+                <div class="avatar">◐</div>
+                <div class="user-details">
+                    <h3>Sohbet Robotu</h3>
+                    <span class="status">Her zaman yanınızda</span>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button class="clear-btn" onclick="clearChat()" title="Sohbeti Temizle">×</button>
+            </div>
+        </div>
+
+       
+        <div class="chat-messages" id="chatMessages">
+           
+            <div class="message bot-message">
+                <div class="message-content">
+                    <p>Merhaba, sizi burada görmek çok güzel. Ben sizin kişisel destek asistanınızım. Bugün kendinizi nasıl hissediyorsunuz? Belki biraz konuşmak istersiniz?</p>
+                    <span class="message-time">Şimdi</span>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="chat-input-area">
+            <div class="input-container">
+                <input type="text" id="messageInput" placeholder="Mesajınızı yazın..." maxlength="500">
+                <button id="sendButton" onclick="sendMessage()">→</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
